@@ -1,0 +1,7 @@
+ipget==0.0.3
+Pillow==5.2.0
+pkg-resources==0.0.0
+qrcode==6.0
+RPi.GPIO==0.6.3
+six==1.11.0
+spidev==3.2
