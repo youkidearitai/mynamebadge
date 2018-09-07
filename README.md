@@ -4,7 +4,7 @@ builderscon の nafuda に自分の作ったプログラムを載せたかった
 
 ## 使ってるライブラリ
 
-epdの[demo code](https://www.waveshare.com/wiki/File:4.2inch_e-paper_module_code.7z)にPython 3用に使えるようにしたもの
+epdの[demo code](https://www.waveshare.com/wiki/File:4.2inch_e-paper_module_code.7z)にPython 3用に使えるようにしたものを再配布
 
 # INSTALL
 
@@ -13,7 +13,7 @@ epdの[demo code](https://www.waveshare.com/wiki/File:4.2inch_e-paper_module_cod
 	$ sudo apt-get install ttf-ancient-fonts
 	$ sudo apt-get install fonts-vlgothic
 
-Python 3.5
+Python 3.5 venvが遅いかも
 
 	$ python3.5 -m venv env
 	$ . env/bin/activate
@@ -35,5 +35,11 @@ Python 3.5
 	Group=pi
 	[Install]
 	WantedBy=multi-user.target
+
+Systemdに変更あったらdaemon-reload
+
 	$ sudo systemctl daemon-reload
+
+Systemdへ起動時にフックさせる
+
 	$ sudo systemctl enable paper.service 

@@ -65,7 +65,7 @@ def main():
     draw.text((center_2nd_line, fontsize + 5), display_2nd_line, font=font, fill=0)
     draw.text((0, 240), '💩', font=symbola, fill=0) # うんち(pile of poo)
 
-    draw.text((320-24, 240), u"💩", font=symbola, fill=0)
+    draw.text((320-24, 240), "💩", font=symbola, fill=0)
 
     moji = moji.rotate(90, expand=True)
 
